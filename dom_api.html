@@ -7,15 +7,29 @@
   </head>
   <body>
     <ul id="parent">
-      <li>前一個兄弟項目 (previous)</li>
-      <li id="target-div">
+      <li class="item">前一個兄弟項目 (previous)</li>
+      <li id="target">
         文字節點 A
-        <span>第一個子標籤 (span)</span>
+        <spa id="span">第一個子標籤 (span)</spa>
         文字節點 B
         <p>最後一個子標籤 (p)</p>
       </li>
-      <li>後一個兄弟項目 (next)</li>
+      <li class="item">後一個兄弟項目 (next)</li>
     </ul>
+    <form action="">
+      <input type="text" name="text" />
+      <input type="text" name="text" />
+      <input type="text" name="text" />
+    </form>
+    <div class="inner">
+      <p>我是原本的段落 1</p>
+      <p>我是原本的段落 2</p>
+    </div>
+    <div class="outer">
+      <p>我是原本的段落 3</p>
+      <p>我是原本的段落 4</p>
+    </div>
+
     <script src="./js/dom_api.js"></script>
   </body>
 </html>
