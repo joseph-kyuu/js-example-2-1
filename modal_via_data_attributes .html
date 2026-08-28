@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>modal example</title>
+    <link rel="stylesheet" href="./css/modal_via_data_attributes.css" />
+  </head>
+  <body>
+    <!-- 一顆按鈕：負責「呼叫」 -->
+    <!-- 觸發器（Trigger） -->
+    <!-- 會使用JS取出這兩個值，那用途是？ -->
+    <button data-bs-toggle="modal" data-bs-target="#exampleModal">
+      開啟 Modal
+    </button>
+
+    <!-- Modal 本體／模板 -->
+
+    <div id="exampleModal" class="modal">
+      <div class="modal-content">
+        <h2>Modal 標題</h2>
+        <p>這是一個簡易的 Modal。</p>
+        <button data-bs-dismiss="modal">關閉</button>
+      </div>
+    </div>
+
+    <script src="./js/modal_via_data_attributes.js"></script>
+  </body>
+</html>
